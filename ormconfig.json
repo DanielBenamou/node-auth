@@ -1,0 +1,18 @@
+[
+  {
+    "type":"mysql",
+    "host":"db1.csdznlau3fww.us-east-1.rds.amazonaws.com",
+    "username":"itziktati",
+    "password":"Itzik786$$",
+    "database":"bnch",
+    "port":3306,
+    "entities": [
+      "src/entity/*.ts"
+    ],
+    "logging": false,
+    "synchronize": true
+  }
+]  
+
+
+
