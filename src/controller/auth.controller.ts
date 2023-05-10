@@ -4,7 +4,6 @@ import { User } from "../entity/user.entity";
 import { sign, verify } from "jsonwebtoken";
 import bcryptjs from "bcryptjs";
 import express from "express"
-import { Arena } from "../entity/arena.entity";
 
 
 export const Register = async (req: Request, res: Response) => {
@@ -22,20 +21,6 @@ export const Register = async (req: Request, res: Response) => {
   });
   res.send(user);
 };
-
-export const MyArena = async (req: Request, res: Response) => {
-  const body = req.body;
-  const arena = await getRepository(Arena).save({
-    my_company_name:body.my_company_name,
-    company_name1:body.company_name1,
-    company_name2:body.company_name2,
-    company_name3:body.company_name3,
-    company_name4:body.company_name4,
-    company_name5:body.company_name5,
-  });
-  res.send(arena);
-};
-
 
 
 export const Login = async (req: Request, res: Response) => {

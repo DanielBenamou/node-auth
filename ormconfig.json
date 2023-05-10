@@ -1,10 +1,10 @@
 [
   {
     "type":"mysql",
-    "host":"db1.csdznlau3fww.us-east-1.rds.amazonaws.com",
-    "username":"itziktati",
-    "password":"Itzik786$$",
-    "database":"bnch",
+    "host":"localhost",
+    "username":"root",
+    "password":"12345678",
+    "database":"node-auth",
     "port":3306,
     "entities": [
       "src/entity/*.ts"

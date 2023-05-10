@@ -1,10 +1,9 @@
 import {Router} from "express";
-import {AuthenticatedUser, Login, Logout, MyArena, Refresh, Register} from "./controller/auth.controller";
+import {AuthenticatedUser, Login, Logout, Refresh, Register} from "./controller/auth.controller";
 import {Forgot, ResetPassword} from "./controller/forgot.controller";
 
 export const routes = (router:Router) => {
 router.post("/api/register",Register)
-router.post("/api/arena",MyArena)
 router.post("/api/login",Login)
 router.get("/api/user",AuthenticatedUser)
 router.post("/api/refresh",Refresh)
